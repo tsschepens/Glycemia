@@ -63,7 +63,7 @@ The interval is very important. I've tried putting a minute but I would get rate
     "modules-right": ["custom/glycemia", "custom/padd","battery", "custom/padd", "clock","custom/notification","custom/padd"],
     ```
 ## Fastfetch implementation
-Additionally, if you want your glycemia displayed in Fastfetch, you can display the content of your cache file in a module : 
+* Additionally, if you want your glycemia displayed in Fastfetch, you can display the content of your cache file in a module : 
     ```sh
     {
       "type": "command",
