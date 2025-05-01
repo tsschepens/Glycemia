@@ -62,3 +62,17 @@ The interval is very important. I've tried putting a minute but I would get rate
     ```sh
     "modules-right": ["custom/glycemia", "custom/padd","battery", "custom/padd", "clock","custom/notification","custom/padd"],
     ```
+## Fastfetch implementation
+Additionally, if you want your glycemia displayed in Fastfetch, you can display the content of your cache file in a module : 
+    ```sh
+    {
+      "type": "command",
+      "key":  "  Glycemia",
+      "keyColor": "magenta",
+      "text": "cat ~/.cache/your-cache-file"
+    },
+    ```
+You want to display the cache file and not launch the script everytime you're starting fastfetch because of rate limit problems and fastfetch time loading...
+
+## Final recommandation
+You want to be careful when modifying your waybar (either if it concerns the script or not). I would advise commenting the line that call the scripts in your waybar when modifying it, it avoid some (again) rate limit problems
