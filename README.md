@@ -8,10 +8,8 @@
 </div>
 
 ## Installation
-* Librelink API Repo (Not made by me of course, huge thanks to the creator of this)
-    ```sh 
-    https://github.com/DRFR0ST/libre-link-unofficial-api
-    ```
+* [Librelink API Repo](https://github.com/DRFR0ST/libre-link-unofficial-api) (Not made by me of course, huge thanks to the creator of this)
+
 * Don't forget to put this line in your package.json
     ```sh
     "type": "module"
