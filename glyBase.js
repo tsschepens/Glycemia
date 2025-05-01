@@ -14,17 +14,18 @@ async function fetchGlycemia() {
   fs.writeFileSync(cacheFile, valeurGlycemie.toString());
   const d = previousValue - valeurGlycemie;
   let trendSymbol = " ";
+  // for trending symbol (arrow) you can either use a nerd font or put your own symbol
   if (previousValue !== null) {
     if (d > 20) {
-      trendSymbol = "";
+      trendSymbol = ""; // going down really fast
     } else if (d > 0) {
-      trendSymbol = "";
+      trendSymbol = ""; // going down slowly
     } else if (d < -20) {
-      trendSymbol = "";
+      trendSymbol = ""; // going up really fast
     } else if (d < 0) {
-      trendSymbol = "";
+      trendSymbol = ""; // going up slowly
     } else {
-      trendSymbol = "";
+      trendSymbol = ""; // stable
     }
   }
   console.log(trendSymbol, valeurGlycemie, "mg/dL");
