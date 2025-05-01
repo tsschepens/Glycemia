@@ -43,7 +43,7 @@
 * You can also create an alias to avoid typing this everytime :
     ```sh
     alias gl='export LIBRE_LINK_UP_VERSION=4.12.0
-    node ~/libre-link-unofficial-api-1.0.0-alpha.6/glyBase.js'
+    node ~/your-path/glyBase.js'
     ```
 
 ## Waybar implementation
