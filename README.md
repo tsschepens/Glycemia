@@ -70,7 +70,7 @@ The interval is very important. I've tried putting a minute but I would get rate
       "text": "cat ~/.cache/your-cache-file"
     },
     ```
-You want to display the cache file and not launch the script everytime you're starting fastfetch because of rate limit problems and fastfetch time loading...
+You want to display the cache file and not launch the script everytime you're starting fastfetch because of rate limit problems and fastfetch time loading (you can even have display problems...)
 
 ## Final recommandation
 You want to be careful when modifying your waybar (either if it concerns the script or not). I would advise commenting the line that call the scripts in your waybar when modifying it, it avoid some (again) rate limit problems
