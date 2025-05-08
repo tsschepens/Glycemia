@@ -54,7 +54,7 @@
         "tooltip": false
     },
     ```
-The interval is very important. I've tried putting a minute but I would get rate limit at some point... 2 minutes is the bare minimum. Feel free to try shortest intervall and make a pull request if you're finding one that doesnt rate limit.
+The interval is very important. I've tried putting a minute but I would get rate limit at some point... 2 minutes is the bare minimum. Feel free to try shorter intervall and make a pull request if you're finding one that doesnt rate limit.
 
 * Then, in your 'module-(right, center or left)', you just add it like any other module (custom/glycemia in this case). In my case : 
     ```sh
