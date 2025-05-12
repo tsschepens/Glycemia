@@ -1,4 +1,4 @@
-![Downloads](https://img.shields.io/github/downloads/tsschepens/Glycemia/total)
+![Downloads](https://img.shields.io/github/commit-activity/m/tsschepens/Glycemia)
 
 <br />
 <div align="center">
