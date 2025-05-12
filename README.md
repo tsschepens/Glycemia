@@ -1,3 +1,5 @@
+![Downloads](https://img.shields.io/github/downloads/Glycemia/total)
+
 <br />
 <div align="center">
   <h3 align="center">Glycemia Data and Waybar implementation</h3>
