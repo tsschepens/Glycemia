@@ -70,7 +70,8 @@ The interval is very important. I've tried putting a minute but I would get rate
         glycemia="$(exec ~/your-path/glyColorless.sh || echo 'No Data')"
     }
     ```
-Note that it is a different script. Since Sandbar doesnt accept bash color output (or maybe I just don't know how to make it work...), I removed the color part. The colorless script looks like this :  
+Note that it is a different script. Since Sandbar doesnt accept bash color output (or maybe I just don't know how to make it work...), I removed the color part and just ouput what glyBase gives us.. 
+* The colorless script looks like this :  
     ```sh
     #!/bin/zsh
     source ~/.zshrc
