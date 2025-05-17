@@ -62,6 +62,27 @@ The interval is very important. I've tried putting a minute but I would get rate
     ```sh
     "modules-right": ["custom/glycemia", "custom/padd","battery", "custom/padd", "clock","custom/notification","custom/padd"],
     ```
+
+## Sandbar / River implementation
+* First in your status config file, you want to add the glycema function (or whatever you want to call it) : 
+    ```sh
+    glycemia() {
+    glycemia="$(exec ~/your-path/glyColorless.sh || echo 'No Data')"
+   }
+    ```
+Note that it is a different script. Since Sandbar doesnt accept bash color output (or maybe I just don't know how to make it work...), I removed the color part and just output what glyBase gives us. The colorless script looks like this : 
+    ```sh
+    #!/bin/zsh
+    source ~/.zshrc
+    OUTPUT=$(gl)
+    echo $OUTPUT
+    ```
+* Then, still in the status config file, you add another line in the while loop (assuming you used a while loop to time the refresh rate of your Sandbar modules. If not, you should, it's litteraly the default config recommended): 
+    ```sh
+    [ $((sec % 120)) -eq 0 ] && glycemia
+    ```
+Again, 120 seconds is the minimum refresh rate accepted by the API (at least for what I tested) if you don't want to get rate limit
+
 ## Fastfetch implementation
 * Additionally, if you want your glycemia displayed in Fastfetch, you can display the content of your cache file in a module : 
     ```sh
