@@ -64,13 +64,13 @@ The interval is very important. I've tried putting a minute but I would get rate
     ```
 
 ## Sandbar / River implementation
-* First in your status config file, you want to add the glycema function (or whatever you want to call it) : 
+* First in your status config file, you want to add the glycemia function (or whatever you want to call it) : 
     ```sh
     glycemia() {
-    glycemia="$(exec ~/your-path/glyColorless.sh || echo 'No Data')"
-   }
+        glycemia="$(exec ~/your-path/glyColorless.sh || echo 'No Data')"
+    }
     ```
-Note that it is a different script. Since Sandbar doesnt accept bash color output (or maybe I just don't know how to make it work...), I removed the color part and just output what glyBase gives us. The colorless script looks like this : 
+Note that it is a different script. Since Sandbar doesnt accept bash color output (or maybe I just don't know how to make it work...), I removed the color part. The colorless script looks like this :  
     ```sh
     #!/bin/zsh
     source ~/.zshrc
