@@ -97,6 +97,6 @@ Again, 120 seconds is the minimum refresh rate accepted by the API (at least for
 You want to display the cache file and not launch the script everytime you're starting fastfetch because of rate limit problems and fastfetch time loading (you can even have display problems...)
 
 ## Final recommandation
-You want to be careful when modifying your waybar (either if it concerns the script or not). I would advise commenting the line that call the scripts in your waybar when modifying it, it avoid some (again) rate limit problems
+You want to be careful when modifying your waybar / Sandbar (either if it concerns the script or not). I would advise commenting the line that call the scripts in your waybar when modifying it, it avoid some (again) rate limit problems
 
 Also, this tutorial could be applied to many more use, I plan on expanding the repo with some server implementation, up to remaking the entire LibreLink app... Maybe one day...
