@@ -70,13 +70,10 @@ The interval is very important. I've tried putting a minute but I would get rate
         glycemia="$(exec ~/your-path/glyColorless.sh || echo 'No Data')"
     }
     ```
-Note that it is a different script. Since Sandbar doesnt accept bash color output (or maybe I just don't know how to make it work...), I removed the color part and just ouput what glyBase gives us.. 
-* The colorless script looks like this :  
+Note that this is a different script than the one for Waybar. The output line is a bit different.
+* The output line looks like this :  
     ```sh
-    #!/bin/zsh
-    source ~/.zshrc
-    OUTPUT=$(gl)
-    echo $OUTPUT
+    echo "^fg($COLOR)$OUTPUT^fg(#bcb5ff)"
     ```
 * Then, still in the status config file, you add another line in the while loop (assuming you used a while loop to time the refresh rate of your Sandbar modules. If not, you should, it's litteraly the default config recommended): 
     ```sh
