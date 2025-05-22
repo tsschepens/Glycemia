@@ -73,8 +73,13 @@ The interval is very important. I've tried putting a minute but I would get rate
 Note that this is a different script than the one for Waybar. The output line is a bit different.
 * The output line looks like this :  
     ```sh
-    echo "^fg($COLOR)$OUTPUT^fg(#bcb5ff)"
+    echo "^fg($COLOR)$OUTPUT^fg(#'default-text-color')"
     ```
+    ```sh 
+    ^fg(#'default-text-color')
+    ```
+is meant to override the color output for the rest of the line. Without it, you would have everything after the glycemia function colored like the glycemia. We don't want that...
+
 * Then, still in the status config file, you add another line in the while loop (assuming you used a while loop to time the refresh rate of your Sandbar modules. If not, you should, it's litteraly the default config recommended): 
     ```sh
     [ $((sec % 120)) -eq 0 ] && glycemia
