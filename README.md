@@ -76,7 +76,7 @@ Note that this is a different script than the one for Waybar. The output line is
     echo "^fg($COLOR)$OUTPUT^fg(#'default-text-color')"
     ```
 The part :
-    ```sh 
+    ``` 
     ^fg(#'default-text-color')
     ```
 is meant to override the color output for the rest of the line. Without it, you would have everything after the glycemia function colored like the glycemia. We don't want that...
