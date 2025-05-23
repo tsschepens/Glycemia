@@ -75,6 +75,7 @@ Note that this is a different script than the one for Waybar. The output line is
     ```sh
     echo "^fg($COLOR)$OUTPUT^fg(#'default-text-color')"
     ```
+The part :
     ```sh 
     ^fg(#'default-text-color')
     ```
