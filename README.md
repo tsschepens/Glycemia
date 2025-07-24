@@ -35,7 +35,7 @@
     ## source ~/.zshrc
     ## source ~/.bashrc
     ```
-* You're all setup for the scripting part, to start the script and display your glycemia in your terminal, run this command (don't forget to change 'your-path' to the actual path):
+* You're all setup for the scripting part, to start the script and display your glycemia in your terminal, run this command (make sure you have an internet connection):
     ```sh
     export LIBRE_LINK_UP_VERSION=4.12.0
     node ~/your-path/glyBase.js'
@@ -56,7 +56,7 @@
         "tooltip": false
     },
     ```
-The interval is very important. I've tried putting a minute but I would get rate limit at some point... 2 minutes is the bare minimum. Feel free to try shorter intervall and make a pull request if you found one that doesn't rate limit.
+The interval is very important. I've tried putting a minute but I would get rate limit at some point... 2 minutes is the bare minimum. Feel free to try shorter intervall and make a pull request if you found one that doesn't get rate limit.
 
 * Then, in your 'module-(right, center or left)', you just add it like any other module (custom/glycemia in this case). In my case : 
     ```sh
