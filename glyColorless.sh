@@ -1,6 +1,6 @@
 #!/bin/zsh
 source ~/.zshrc
-OUTPUT=$("Alias de votre commande. Ex : 'gl'")
+OUTPUT=$("Alias of your command. Ex : 'gl'")
 GLYCEMIA=$(echo "$OUTPUT" | grep -oP '\d+(\.\d+)?')
 SUPERLOW=40
 LOW=70  
